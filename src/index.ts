@@ -1,11 +1,11 @@
 import { GraphQLServer } from 'graphql-yoga';
 
 // GraphQL SDLに沿ってschemaを定義
-const typeDefs = `
-  type Query {
-    description: String
-  }
-`;
+// const typeDefs = `
+//   type Query {
+//     description: String
+//   }
+// `;
 
 // GraphQL APIのリクエストに応えるための実装
 const resolvers = {
@@ -15,7 +15,7 @@ const resolvers = {
 };
 
 const server = new GraphQLServer({
-  typeDefs,
+  typeDefs: './src/schema.graphql',
   resolvers,
 });
 
