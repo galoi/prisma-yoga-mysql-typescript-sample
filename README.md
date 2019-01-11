@@ -12,6 +12,12 @@ cd database
 docker-compose up
 ```
 
+## Deploy to Prisma Server
+```
+cd database
+prisma deploy
+```
+
 ## Start BFF
 ```
 yarn start
